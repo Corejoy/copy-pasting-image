@@ -1,6 +1,6 @@
 ﻿// TODO: Resort the name and change it every time, the code works very well by now
 
-namespace ImageBot
+namespace MainPoint
 {
     // Class to store global variables
     class Global
