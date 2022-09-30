@@ -7,7 +7,6 @@ namespace ImageBot
     {
         public static string sourceFile = @"C:\Users\glitc\Pictures\Pinterest\kj.jpg";
         public static string destinationFile = @"C:\Users\glitc\Pictures\reyna.png";
-        public static string fileName = @"reyna.png"; // For resort the name of the file and change it
     }
     class Program 
     {
@@ -19,16 +18,17 @@ namespace ImageBot
         public static void Copy() // Method for copying and pasting the file infinitely
         {
             File.Copy(Global.sourceFile, Global.destinationFile, true); // true allows overwriting
-            while (check() == true || check() == false)
+            while (Check() == true)
             {
-                Global.fileName = "reyna" + "1" + ".png";
+                Check();
             }
         }
 
-        public static  Boolean check()
+        public static Boolean Check()
         {
-            if (File.Exists(Global.fileName))
+            if (File.Exists(Global.destinationFile))
             {
+
                 return true;
             }
 
