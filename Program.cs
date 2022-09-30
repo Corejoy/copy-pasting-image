@@ -18,7 +18,7 @@ namespace ImageBot
         public static void Copy() // Method for copying and pasting the file infinitely
         {
             File.Copy(Global.sourceFile, Global.destinationFile, true); // true allows overwriting
-            while (Check() == true)
+            while (Check() != false)
             {
                 Check();
             }
