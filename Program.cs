@@ -32,18 +32,5 @@ namespace MainPoint
 
 
         }
-
-        public static Boolean Check()
-        {
-            if (File.Exists(Global.destinationFile))
-            {
-                return true;
-            }
-
-            else
-            {
-                return false;
-            }
-        }
     }
 }
