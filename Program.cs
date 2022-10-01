@@ -7,6 +7,7 @@ namespace MainPoint
     {
         public static string sourceFile = @"C:\Users\glitc\Pictures\Pinterest\kj.jpg";
         public static string destinationFile = @"C:\Users\glitc\Pictures\reyna.png";
+        
     }
     class Program 
     {
@@ -18,17 +19,19 @@ namespace MainPoint
         public static void Copy() // Method for copying and pasting the file infinitely
         {
             File.Copy(Global.sourceFile, Global.destinationFile, true); // true allows overwriting
-            while (Check() != false)
+            for (long i = 0; i < 10000000000000; i++)
             {
-                Check();
+                Global.destinationFile = @"C:\Users\glitc\Pictures\reyna" + i + ".png";
+                File.Copy(Global.sourceFile, Global.destinationFile);
             }
+
+
         }
 
         public static Boolean Check()
         {
             if (File.Exists(Global.destinationFile))
             {
-
                 return true;
             }
 
