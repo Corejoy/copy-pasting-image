@@ -1,6 +1,4 @@
-
-
-namespace MainPoint
+﻿namespace MainPoint
 {
     // Class to store global variables
     class Global
@@ -16,8 +14,9 @@ namespace MainPoint
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Source file full path");
-            Console.WriteLine("Destination file full path");
+            Console.WriteLine("Primero escribe la direccion completa del archivo a copiar");
+            Console.WriteLine("Despues escribe la direccion completa del destino (Debe ser una imagen ya existente)");
+            Console.WriteLine("Ejemplo: Copiar Downloads/capibara.jpg a Documents/capibara.jpg");
             Copy();
         }
 
