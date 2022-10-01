@@ -1,4 +1,4 @@
-﻿// TODO: Resort the name and change it every time, the code works very well by now
+
 
 namespace MainPoint
 {
