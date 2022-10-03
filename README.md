@@ -7,7 +7,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet-framework
 
 Where this program runs: Only Windows
 
-Execute:
+# Execution:
 
 Just download de zip clicking the code button, unzip it in any place and make a cd command to the path where you have the .exe file 
 and execute this: .\Bot.exe
